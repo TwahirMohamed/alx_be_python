@@ -5,7 +5,7 @@
 # The user enters their age.
 # The script calculates and prints how old the user will be in 2050.
 
-current_age = int(input("How old are you?\n"))
+current_age = int(input("How old are you?"))
 
 future_age = current_age + 27
 
