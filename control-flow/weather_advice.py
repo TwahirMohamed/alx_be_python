@@ -2,7 +2,7 @@
 # The task aims to demonstrate the use of if,elif and else statements to make decision in a program.
 
 # prompt user for weather input
-weather = input("What's the weather like today? (sunny/rainy/cold):")
+weather = input("What's the weather like today? (sunny/rainy/cold):").lower()
 
 # provide clothing recommendations
 if weather == "sunny":
