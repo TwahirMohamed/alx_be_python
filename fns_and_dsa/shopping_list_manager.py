@@ -14,24 +14,24 @@ def main():
     # Loop for continous display
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
         match choice:
-            case '1':
+            case 1:
                 # Add an item
                 add_item = input("Please enter the item to add on the shopping list: ")
                 shopping_list.append(add_item)
                 pass
-            case '2':
+            case 2:
                 # Remove an item
                 remove_item = input("Please enter the item to remove: ")
-                shopping_list.pop(remove_item)
+                shopping_list.remove(remove_item) # used remove instead of pop since pop works for index 
                 pass
-            case '3':
+            case 3:
                 # View List
                 print(shopping_list)
                 pass
-            case '4':
+            case 4:
                 print("Goodbye!")
                 break
             case _:
