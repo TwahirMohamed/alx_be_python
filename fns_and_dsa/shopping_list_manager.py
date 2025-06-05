@@ -19,12 +19,12 @@ def main():
         match choice:
             case 1:
                 # Add an item
-                add_item = input("Please enter the item to add on the shopping list: ")
+                add_item = input("Enter the item to add: ")
                 shopping_list.append(add_item)
                 pass
             case 2:
                 # Remove an item
-                remove_item = input("Please enter the item to remove: ")
+                remove_item = input("Enter the item to remove: ")
                 shopping_list.remove(remove_item) # used remove instead of pop since pop works for index 
                 pass
             case 3:
