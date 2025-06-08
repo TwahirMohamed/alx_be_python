@@ -10,15 +10,18 @@ def convert_to_fahrenheit(celsius):
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     print(f"{celsius}°C is {fahrenheit}°F")
 def main():
-    temperature = float(input("Enter the temperature to convert: "))
-    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+    try:
+        temperature = float(input("Enter the temperature to convert: "))
+        choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
-    if choice.lower() == 'c':
-        convert_to_fahrenheit(temperature)
-    elif choice.lower() == 'f':
-        convert_to_celsius(temperature)
-    else:
-        print("Unknown operatiom.")
+        if choice.lower() == 'c':
+            convert_to_fahrenheit(temperature)
+        elif choice.lower() == 'f':
+            convert_to_celsius(temperature)
+        else:
+            print("Unknown operatiom.")
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
