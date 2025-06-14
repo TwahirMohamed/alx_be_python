@@ -30,6 +30,3 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(6,2), 3)
         self.assertEqual(self.calc.divide(7, 0), None)
 
-        # Add more assertions to thoroughly test the add method.
-
-# Remember to write additional test methods for subtract, multiply, and divide.
