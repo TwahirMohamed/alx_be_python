@@ -2,25 +2,25 @@
 # Create a base class Book and two child Ebook anf PrintBook.
 # A library class to demonstrate composition by managing collection of books.
 class Book:
-    ''' Base class for the library system.
-    title: string containing book title.
-    author: string containing'''
+    ''' Base class for the library system.title: string containing book title.author: string containing'''
     def __init__(self, title, author):
         """Method to initialize book attributes"""
         self.title = title
         self.author = author
     
+
 class EBook(Book):
     ''' child class to book class'''
     def __init__(self, title, author, file_size):
-        self.file_size = file_size
         super().__init__(title, author)
+        self.file_size = file_size
     
+
 class PrintBook(Book):
     ''' Another child class that inherits from book class '''
     def __init__(self, title, author, page_count):
-        self.page_count = page_count
         super().__init__(title, author)
+        self.page_count = page_count
 
 class Library:
     ''' Class that demonstrates composition'''
